@@ -1,0 +1,4 @@
+development.sqlite3-shm
+development.sqlite3-wal
+Gemfile.lock
+schema.rb

@@ -1,0 +1,12 @@
+<ul>
+  <% @notes.each do |note| %>
+    <li>
+      <strong><%= note.title %></strong> — <%= note.content %>
+      <a href="/notes/<%= note.id %>/edit">Edit</a>
+      <form action="/notes/<%= note.id %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% end %>
+</ul>
